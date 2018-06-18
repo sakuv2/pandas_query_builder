@@ -12,14 +12,16 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='sample',
-    version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    name='pandas_query_builder',
+    version='0.0.1',
+    description='pandas dataframe wrap',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    author='@sakuV2',
+    author_email='hoge',
+    url='https://github.com/sakuv2/pandas_query_builder',
     license=license,
-    packages=find_packages(exclude=('tests', 'docs'))
+    install_requires=['pandas'],
+    packages=find_packages(exclude=('tests', 'docs')),
+    test_suite='tests'
 )
 
